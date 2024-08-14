@@ -1,0 +1,23 @@
+include <stdlib.h>
+
+int main()
+{
+int  attend;
+
+ attend= 0b00101111;
+ printf (" attend befor do anything %x\n",attend);
+ attend=attend | (1<<4);
+  printf ("attend after set %x \n",attend);
+  attend =0b00101111;
+  attend=attend & ~(1<<4);
+
+printf ("attend after reset %x \n",attend);
+
+attend =0b00101111;
+  attend=attend ^(1<<4);
+
+printf (" attend after togal %x\n",attend);
+
+
+    return 0;
+}
